@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Capture button clicks
         LoginButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
+            public void onClick(View view) {
 
-                Toast.makeText(arg0.getContext(),"login clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(),"login clicked",Toast.LENGTH_SHORT).show();
                 // Start NewActivity.class
                 Intent myIntent = new Intent(getApplicationContext(),
                         SecondActivity.class);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         LogoutButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
+            public void onClick(View view) {
 
                 // Start NewActivity.class
                 Intent myIntent = new Intent(MainActivity.this,

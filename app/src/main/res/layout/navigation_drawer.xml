@@ -14,10 +14,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorAccent">
-        <android.support.v7.widget.RecyclerView
+        android:background="@color/colorAccent"
+        android:weightSum="4">
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
             >
         </android.support.v7.widget.RecyclerView>
 
